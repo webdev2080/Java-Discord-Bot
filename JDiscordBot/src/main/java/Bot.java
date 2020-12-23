@@ -8,7 +8,7 @@ import discord4j.core.object.entity.User;
 public class Bot {
 
     public static void main(String[] args) {
-        GatewayDiscordClient client = DiscordClientBuilder.create("NzkxMTU1MDMzMTAxOTU5MTgw.X-LCig.GQWlOICndNoPioNnrIKMLNhVvM0").build().login().block();
+        GatewayDiscordClient client = DiscordClientBuilder.create("TOKEN").build().login().block();
 
         client.getEventDispatcher().on(ReadyEvent.class)
                 .subscribe(event -> {
